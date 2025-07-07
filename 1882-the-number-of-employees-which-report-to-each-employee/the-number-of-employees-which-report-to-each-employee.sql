@@ -8,5 +8,4 @@ LEFT JOIN Employees AS E2
 ON E1.reports_to = E2.employee_id
 WHERE E2.employee_id IS NOT NULL
 GROUP BY E2.employee_id, E2.name
-HAVING COUNT(E2.employee_id) >= 1
 ORDER BY E2.employee_id
